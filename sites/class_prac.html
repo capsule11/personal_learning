@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const add = () => {
+        const first = document.getElementById("first_num").value;
+        const Second = document.getElementById("second_num").value;
+        document.querySelector(
+          "#result"
+        ).innerHTML = `Addition of two number is ${
+          Number(first) + Number(Second)
+        }`;
+      };
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><label for="first_num">Enter First number:</label></td>
+        <td><input type="number" name="first_num" id="first_num" /></td>
+      </tr>
+      <tr>
+        <td><label for="Second num"> Enter Second number:</label></td>
+        <td><input type="number" name="second_num" id="second_num" /></td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="add()">Add</button>
+        </td>
+      </tr>
+    </table>
+    <p id="result"></p>
+  </body>
+</html>
